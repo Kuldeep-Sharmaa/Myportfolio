@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Linear-style grid */
+    --grid-line: rgba(0, 0, 0, 0.025);
+  }
+
+  html {
+    background-color: #fcfcfc;
+    color: #111111;
+  }
+
+  body {
+    @apply bg-light-bg text-light-text-primary antialiased;
+    @apply transition-colors duration-200;
+  }
+  html.dark {
+    --grid-line: rgba(255, 255, 255, 0.03);
+  }
+  /* Dark mode */
+  html.dark body {
+    @apply bg-dark-bg text-dark-text-primary;
+  }
+}
+
+@layer components {
+  /* Container for consistent spacing */
+  .container-custom {
+    @apply max-w-4xl mx-auto px-6 sm:px-8;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 sm:py-20;
+  }
+
+  /* Text colors */
+  .text-primary {
+    @apply text-light-text-primary dark:text-dark-text-primary;
+  }
+
+  .text-secondary {
+    @apply text-light-text-secondary dark:text-dark-text-secondary;
+  }
+
+  .text-tertiary {
+    @apply text-light-text-tertiary dark:text-dark-text-tertiary;
+  }
+
+  /* Links */
+  .link {
+    @apply text-light-text-primary dark:text-dark-text-primary;
+    @apply hover:text-light-text-secondary dark:hover:text-dark-text-secondary;
+    @apply transition-colors duration-150;
+  }
+
+  .btn-primary {
+    @apply bg-light-text-primary dark:bg-dark-text-primary;
+    @apply text-light-bg dark:text-dark-bg;
+    @apply px-5 py-2.5 rounded-md text-sm font-medium;
+    @apply hover:opacity-90;
+  }
+
+  .btn-secondary {
+    @apply border border-light-border dark:border-dark-border;
+    @apply text-light-text-primary dark:text-dark-text-primary;
+    @apply px-5 py-2.5 rounded-md text-sm;
+    @apply hover:bg-light-surface dark:hover:bg-dark-surface;
+  }
+
+  .bg-linear-grid {
+    background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
