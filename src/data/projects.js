@@ -18,7 +18,7 @@ export const projects = [
     description:
       "Redesigned the clinic website to make services easier to understand and navigate, especially on mobile. Improved structure and performance led to a 30% increase in client inquiries after launch.",
     tech: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
-    link: "https://www.punjabdentalclinic.com",
+    link: "https://punjabdentalclinc.com/",
   },
 
   {
