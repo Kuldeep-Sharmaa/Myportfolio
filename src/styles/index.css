@@ -11,11 +11,14 @@
   html {
     background-color: #fcfcfc;
     color: #111111;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-light-bg text-light-text-primary antialiased;
     @apply transition-colors duration-200;
+    overflow-x: hidden;
   }
   html.dark {
     --grid-line: rgba(255, 255, 255, 0.03);
