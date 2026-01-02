@@ -6,6 +6,7 @@
   :root {
     /* Linear-style grid */
     --grid-line: rgba(0, 0, 0, 0.025);
+    overflow-x: hidden;
   }
 
   html {
