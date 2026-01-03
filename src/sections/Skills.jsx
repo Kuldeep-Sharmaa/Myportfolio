@@ -40,7 +40,11 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="section-padding">
+    <section
+      id="skills"
+      ref={sectionRef}
+      className="section-padding overflow-x-hidden"
+    >
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         {/* Header */}
         <div
