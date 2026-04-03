@@ -33,7 +33,7 @@ export default function Skills() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setIsVisible(true),
-      { threshold: 0.1, rootMargin: "0px 0px -80px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -80px 0px" },
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
@@ -77,8 +77,8 @@ export default function Skills() {
                   isVisible
                     ? "translate-x-0 opacity-100"
                     : isOdd
-                    ? "translate-x-16 opacity-0"
-                    : "-translate-x-16 opacity-0"
+                      ? "translate-x-16 opacity-0"
+                      : "-translate-x-16 opacity-0"
                 }`}
                 style={{ transitionDelay: `${i * 80 + 150}ms` }}
               >
@@ -105,8 +105,8 @@ export default function Skills() {
                       isExpanded
                         ? "bg-light-text-primary dark:bg-dark-text-primary scale-y-100"
                         : isHovered
-                        ? "bg-light-text-tertiary dark:bg-dark-text-tertiary scale-y-100"
-                        : "bg-light-border dark:bg-dark-border scale-y-50"
+                          ? "bg-light-text-tertiary dark:bg-dark-text-tertiary scale-y-100"
+                          : "bg-light-border dark:bg-dark-border scale-y-50"
                     }`}
                   />
 
@@ -129,8 +129,8 @@ export default function Skills() {
                               isExpanded
                                 ? "text-primary"
                                 : isHovered
-                                ? "text-primary"
-                                : "text-primary"
+                                  ? "text-primary"
+                                  : "text-primary"
                             }`}
                           >
                             {skill.title}
@@ -161,8 +161,8 @@ export default function Skills() {
                             isExpanded
                               ? "border-light-text-primary dark:border-dark-text-primary scale-100 rotate-90"
                               : isHovered
-                              ? "border-light-text-primary dark:border-dark-text-primary scale-110"
-                              : "border-light-border dark:border-dark-border scale-100"
+                                ? "border-light-text-primary dark:border-dark-text-primary scale-110"
+                                : "border-light-border dark:border-dark-border scale-100"
                           }`}
                         />
 
@@ -181,8 +181,8 @@ export default function Skills() {
                             isExpanded
                               ? "bg-transparent scale-0 rotate-90"
                               : isHovered
-                              ? "bg-light-text-primary dark:bg-dark-text-primary scale-100"
-                              : "bg-tertiary scale-100"
+                                ? "bg-light-text-primary dark:bg-dark-text-primary scale-100"
+                                : "bg-tertiary scale-100"
                           }`}
                         />
                       </div>
@@ -228,7 +228,7 @@ export default function Skills() {
 
           <div className="mt-3 flex flex-wrap items-center gap-2 sm:gap-3 text-sm sm:text-base">
             <span className="text-tertiary">Backend & services:</span>
-            <span className="font-medium text-primary">Node.js</span>
+            <span className="font-medium text-primary">Cloud Functions</span>
             <span className="text-tertiary opacity-50">·</span>
             <span className="font-medium text-primary">Firebase</span>
           </div>
