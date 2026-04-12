@@ -202,7 +202,6 @@ export default function Skills() {
             );
           })}
         </div>
-
         {/* Tech stack footer */}
         <div
           className={`mt-20 sm:mt-24 pt-12 border-t border-light-border dark:border-dark-border transition-all duration-700 ease-out ${
@@ -214,9 +213,7 @@ export default function Skills() {
             <span className="text-tertiary">Primary stack:</span>
             <span className="font-medium text-primary">React</span>
             <span className="text-tertiary opacity-50">·</span>
-            <span className="font-medium text-primary">JavaScript</span>
-            <span className="text-tertiary opacity-50">·</span>
-            <span className="font-medium text-primary">TypeScript</span>
+            <span className="font-medium text-primary">JavaScript (ES6+)</span>
           </div>
 
           <div className="mt-3 flex flex-wrap items-center gap-2 sm:gap-3 text-sm sm:text-base">
@@ -228,9 +225,20 @@ export default function Skills() {
 
           <div className="mt-3 flex flex-wrap items-center gap-2 sm:gap-3 text-sm sm:text-base">
             <span className="text-tertiary">Backend & services:</span>
+            <span className="font-medium text-primary">Firebase</span>
+            <span className="text-tertiary opacity-50">·</span>
             <span className="font-medium text-primary">Cloud Functions</span>
             <span className="text-tertiary opacity-50">·</span>
-            <span className="font-medium text-primary">Firebase</span>
+            <span className="font-medium text-primary">LLM APIs</span>
+          </div>
+
+          <div className="mt-3 flex flex-wrap items-center gap-2 sm:gap-3 text-sm sm:text-base">
+            <span className="text-tertiary">Other:</span>
+            <span className="font-medium text-primary">PWA</span>
+            <span className="text-tertiary opacity-50">·</span>
+            <span className="font-medium text-primary">SEO</span>
+            <span className="text-tertiary opacity-50">·</span>
+            <span className="font-medium text-primary">Git</span>
           </div>
         </div>
       </div>
