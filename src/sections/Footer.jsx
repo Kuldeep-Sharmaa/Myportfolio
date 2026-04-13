@@ -24,7 +24,7 @@ export default function Footer() {
               </span>
             </h3>
             <p className="mt-3 text-sm sm:text-base text-secondary leading-relaxed">
-              Frontend engineer focused on building clean, scalable, and
+              Frontend developer focused on building clean, scalable, and
               user-focused web interfaces.
             </p>
           </div>
